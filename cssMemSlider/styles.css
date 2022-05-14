@@ -13,7 +13,8 @@
 }
 
 .header {
-    padding-top: 1rem;
+    margin: 0;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -22,14 +23,14 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     padding-top: 2rem;
-    max-width: 50%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .slider {
     width: 100%;
-    height: 45rem;
+    height: 70vh;
     display: flex;
     padding-bottom: 2rem;
     overflow: hidden;
@@ -91,7 +92,7 @@
 .control__dot {
     display: block;
     visibility: hidden;
-    border-radius: 0.8rem;
+    border-radius: 100%;
     width: 0.8rem;
     height: 0.8rem;
     background: #25282a;
@@ -138,4 +139,20 @@
 }
 #Meme4:checked ~ .control #control__dot_4 {
     visibility: visible;
+}
+
+@media screen and (max-width: 767px) {
+    .description {
+        width: 100%;
+        order: 2;
+    }
+    .control_first {
+        margin-left: auto;
+    }
+    .control_last {
+        margin-right: auto;
+    }
+    .slider {
+        height: 50vh
+    }
 }
