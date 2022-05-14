@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <title>cssMemSlider</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/x-icon" href="assets/icon/favicon-32x32.png">
 </head>
 <body class="body">
 <div class="wrapper">
-    <div class="slider">
-        <input type="radio" id="Meme1" name="control" checked>
-        <input type="radio" id="Meme2" name="control">
-        <input type="radio" id="Meme3" name="control">
-        <input type="radio" id="Meme4" name="control">
+    <input class="slider__buttons_hidden" type="radio" id="Meme1" name="slider__controls" checked>
+    <input class="slider__buttons_hidden" type="radio" id="Meme2" name="slider__controls">
+    <input class="slider__buttons_hidden" type="radio" id="Meme3" name="slider__controls">
+    <input class="slider__buttons_hidden" type="radio" id="Meme4" name="slider__controls">
 
-        <div class="slider__item"><img src="assets/img/Mem1.jpg" alt="First meme"></div>
-        <div class="slider__item"><img src="assets/img/Mem2.jpg" alt="Second meme"></div>
-        <div class="slider__item"><img src="assets/img/Mem3.jpg" alt="Third meme"></div>
-        <div class="slider__item"><img src="assets/img/Mem4.jpg" alt="Forth meme"></div>
+    <label for="Meme1" class="control"></label>
+    <label for="Meme2" class="control"></label>
+    <label for="Meme3" class="control"></label>
+    <label for="Meme4" class="control"></label>
+
+    <div class="slider">
+        <div class="slider__item" id="slide_first"></div>
+        <div class="slider__item" id="slide_second"></div>
+        <div class="slider__item" id="slide_third"></div>
+        <div class="slider__item" id="slide_fourth"></div>
     </div>
 
-    <div class="additional">
-        <div class="description">
-            <h4 class="description__text"></h4>
-            <h4 class="description__text"></h4>
-            <h4 class="description__text"></h4>
-            <h4 class="description__text"></h4>
-        </div>
-        <div class="controls">
-            <label for="Meme1" class="control"></label>
-            <label for="Meme2" class="control"></label>
-            <label for="Meme3" class="control"></label>
-            <label for="Meme4" class="control"></label>
-        </div>
+    <div class="description">
+        <div class="description__text" id="description__text_first">First text</div>
+        <div class="description__text" id="description__text_second">Second text</div>
+        <div class="description__text" id="description__text_third">Third text</div>
+        <div class="description__text" id="description__text_fourth">Fourth text</div>
     </div>
 </div>
 </body>
