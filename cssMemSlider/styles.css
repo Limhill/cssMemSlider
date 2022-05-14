@@ -7,45 +7,50 @@
 .body {
     background: #25282a;
     color: azure;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Roboto, sans-serif;
+}
+
+.header {
+    padding-top: 1rem;
+    text-align: center;
 }
 
 .wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
     padding-top: 2rem;
-    max-width: 90%;
+    max-width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.slider__buttons_hidden {
-    display: none;
-    visibility: hidden;
-}
-
 .slider {
     width: 100%;
-    height: 30rem;
+    height: 45rem;
     display: flex;
     padding-bottom: 2rem;
     overflow: hidden;
 }
 
-.control {
-    background: aqua;
-    border-radius: 3rem;
-    width: 1rem;
-    height: 1rem;
-    cursor: pointer;
-    order: 1;
+.slider__item {
+    background: #25282a;
+    text-align: center;
+    width: 0;
+    height: 100%;
+    transition: 0.3s width ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
 }
 
 .description {
-    text-align: center;
-    vertical-align: center;
     display: flex;
-    width: 20%;
+    width: 50%;
     margin-right: auto;
     overflow: hidden;
 }
@@ -56,12 +61,44 @@
     transition: 0.3s ease-in-out;
     white-space: nowrap;
     overflow: hidden;
+    vertical-align: middle;
 }
 
-.slider__item, .description__text {
-    width: 0;
-    height: 100%;
-    transition: 0.3s width ease-in-out;
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    order: 1;
+}
+
+.control__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #74aaf8;
+    border-radius: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.control:hover .control__circle {
+    background: #ffffff;
+}
+
+.control__dot {
+    display: block;
+    visibility: hidden;
+    border-radius: 0.8rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #25282a;
+}
+
+.slider__buttons_hidden {
+    visibility: hidden;
 }
 
 #Meme1:checked ~ .slider #slide_first {
@@ -79,30 +116,26 @@
 
 #Meme1:checked ~ .description #description__text_first {
     width: 100%;
-    visibility: visible;
 }
 #Meme2:checked ~ .description #description__text_second {
     width: 100%;
-    visibility: visible;
 }
 #Meme3:checked ~ .description #description__text_third {
     width: 100%;
-    visibility: visible;
 }
 #Meme4:checked ~ .description #description__text_fourth {
     width: 100%;
-    visibility: visible;
 }
 
-#slide_first {
-    background: #ffff1b;
+#Meme1:checked ~ .control #control__dot_1 {
+    visibility: visible;
 }
-#slide_second {
-    background: #0048ff;
+#Meme2:checked ~ .control #control__dot_2 {
+    visibility: visible;
 }
-#slide_third {
-    background: #ce1313;
+#Meme3:checked ~ .control #control__dot_3 {
+    visibility: visible;
 }
-#slide_fourth {
-    background: #ec731c;
+#Meme4:checked ~ .control #control__dot_4 {
+    visibility: visible;
 }

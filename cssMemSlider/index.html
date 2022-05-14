@@ -8,29 +8,30 @@
     <link rel="icon" type="image/x-icon" href="assets/icon/favicon-32x32.png">
 </head>
 <body class="body">
+<h1 class="header">CSS Mem Slider</h1>
 <div class="wrapper">
     <input class="slider__buttons_hidden" type="radio" id="Meme1" name="slider__controls" checked>
     <input class="slider__buttons_hidden" type="radio" id="Meme2" name="slider__controls">
     <input class="slider__buttons_hidden" type="radio" id="Meme3" name="slider__controls">
     <input class="slider__buttons_hidden" type="radio" id="Meme4" name="slider__controls">
 
-    <label for="Meme1" class="control"></label>
-    <label for="Meme2" class="control"></label>
-    <label for="Meme3" class="control"></label>
-    <label for="Meme4" class="control"></label>
+    <label for="Meme1" class="control"><span class="control__circle"><span class="control__dot" id="control__dot_1"></span></span></label>
+    <label for="Meme2" class="control"><span class="control__circle"><span class="control__dot" id="control__dot_2"></span></span></label>
+    <label for="Meme3" class="control"><span class="control__circle"><span class="control__dot" id="control__dot_3"></span></span></label>
+    <label for="Meme4" class="control"><span class="control__circle"><span class="control__dot" id="control__dot_4"></span></span></label>
 
     <div class="slider">
-        <div class="slider__item" id="slide_first"></div>
-        <div class="slider__item" id="slide_second"></div>
-        <div class="slider__item" id="slide_third"></div>
-        <div class="slider__item" id="slide_fourth"></div>
+        <div class="slider__item" id="slide_first"><img src="assets/img/Meme1.jpg" alt="First meme" class="slide"></div>
+        <div class="slider__item" id="slide_second"><img src="assets/img/Meme2.jpg" alt="Second meme" class="slide"></div>
+        <div class="slider__item" id="slide_third"><img src="assets/img/Meme3.jpeg" alt="Third meme" class="slide"></div>
+        <div class="slider__item" id="slide_fourth"><img src="assets/img/Meme4.jpg" alt="Fourth meme" class="slide"></div>
     </div>
 
     <div class="description">
-        <div class="description__text" id="description__text_first">First text</div>
-        <div class="description__text" id="description__text_second">Second text</div>
-        <div class="description__text" id="description__text_third">Third text</div>
-        <div class="description__text" id="description__text_fourth">Fourth text</div>
+        <span class="description__text" id="description__text_first">Relax, take it easy</span>
+        <span class="description__text" id="description__text_second">For there is nothing that we can do</span>
+        <span class="description__text" id="description__text_third">Relax</span>
+        <span class="description__text" id="description__text_fourth">А дальше я не помню</span>
     </div>
 </div>
 </body>
