@@ -91,6 +91,10 @@
     background: #ffffff;
 }
 
+.control:active .control__circle {
+    background: grey;
+}
+
 .control__dot {
     display: block;
     visibility: hidden;
