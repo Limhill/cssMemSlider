@@ -37,7 +37,7 @@
 }
 
 .slider__item {
-    background: #25282a;
+    background: #ffffff;
     text-align: center;
     width: 0;
     height: 100%;
@@ -47,6 +47,8 @@
 .slide {
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .description {
@@ -158,7 +160,7 @@
         margin-right: auto;
     }
     .slider {
-        height: 40vh
+        height: 65vh
     }
 }
 
