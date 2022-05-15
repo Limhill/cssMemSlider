@@ -149,6 +149,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 90%;
+    }
     .description {
         width: 100%;
         order: 2;
