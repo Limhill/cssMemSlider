@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssMemSlider</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon-32x32.png">
+</head>
+<body class="body">
+<h1 class="header">CSS Mem Slider</h1>
+<div class="wrapper">
+    <input class="slider__buttons_hidden" type="radio" id="Meme1" name="slider__controls" checked>
+    <input class="slider__buttons_hidden" type="radio" id="Meme2" name="slider__controls">
+    <input class="slider__buttons_hidden" type="radio" id="Meme3" name="slider__controls">
+    <input class="slider__buttons_hidden" type="radio" id="Meme4" name="slider__controls">
+
+    <label for="Meme1" class="control control_first"><span class="control__circle"><span class="control__dot" id="control__dot_1"></span></span></label>
+    <label for="Meme2" class="control"><span class="control__circle"><span class="control__dot" id="control__dot_2"></span></span></label>
+    <label for="Meme3" class="control"><span class="control__circle"><span class="control__dot" id="control__dot_3"></span></span></label>
+    <label for="Meme4" class="control control_last"><span class="control__circle"><span class="control__dot" id="control__dot_4"></span></span></label>
+
+    <div class="slider">
+        <div class="slider__item" id="slide_first"><img src="assets/img/Meme1.jpg" alt="First meme" class="slide"></div>
+        <div class="slider__item" id="slide_second"><img src="assets/img/Meme2.jpg" alt="Second meme" class="slide"></div>
+        <div class="slider__item" id="slide_third"><img src="assets/img/Meme3.jpg" alt="Third meme" class="slide"></div>
+        <div class="slider__item" id="slide_fourth"><img src="assets/img/Meme4.jpeg" alt="Fourth meme" class="slide"></div>
+    </div>
+
+    <div class="description">
+        <span class="description__text" id="description__text_first">Relax, take it easy</span>
+        <span class="description__text" id="description__text_second">For there is nothing that we can do</span>
+        <span class="description__text" id="description__text_third">Relax</span>
+        <span class="description__text" id="description__text_fourth">А дальше я не помню</span>
+    </div>
+</div>
+<p class="info">Десктоп версия включается при разрешении >768px<br>Мобильная версия включается при разрешении <=768px</p>
+</body>
+</html>
