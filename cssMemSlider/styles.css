@@ -59,12 +59,13 @@
 }
 
 .description__text {
+    display: flex;
+    align-items: center;
     width: 0;
     height: 100%;
     transition: 0.2s ease-in-out;
     white-space: nowrap;
     overflow: hidden;
-    vertical-align: middle;
 }
 
 .control {
